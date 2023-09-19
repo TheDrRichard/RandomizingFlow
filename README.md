@@ -16,5 +16,7 @@ Illustration of flow:
 
 To customize this flow, open Power automate, select the flow, and click on EDIT. 
 a. Consider changing the conditions under which it starts. I use the "Recurrence" trigger in practice, so you'd want to change the "Manually trigger a flow" block. 
-The 
-
+b. Change the "Value" setting under "MaxNumberOfUAsToday" block if want more or less than 3 random picks. 
+c. It's important to set the upper number of possible selections, regardless of how many are actually occupied. Currently this is set to 40. Change this under "MaxNumberOfBeds"
+d. "Current Census" has two sub routines. Change the one called "GetExcelTable" if you want some other file located somewhere else. Note: Under MS Flows, excel tables have to reside either on a sharepoint/teams site or OneDrive location. 
+e. Last step: Where do you want the results posted: Change the "Post card in a chat or channel" location where it specifies "Recipient." You can change this to a TEAMS channel if you change the "POST IN" key. 
